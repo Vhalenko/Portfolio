@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Video Editor — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of a professional video editor — reel, projects, skills and contact."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="about" id="about">
+        <div class="centered">
+          <div class="avatar" aria-hidden>
+            <img src="/assets/images/pfp.JPG" alt="Avatar" />
+          </div>
+          <div class="contact" aria-label="Contact info">
+            <div>
+              <strong>Phone:</strong>&nbsp;<a href="tel:+31612345678"
+                >+31 6 12 34 56 78</a
+              >
+            </div>
+            <div>
+              <strong>Email:</strong>&nbsp;<a href="mailto:john@example.com"
+                >john@example.com</a
+              >
+            </div>
+            <div><strong>Birthday:</strong>&nbsp;June 15, 1995</div>
+            <div><strong>Location:</strong>&nbsp;Amsterdam, Netherlands</div>
+          </div>
+        </div>
+
+        <div class="centered">
+          <h2>About me</h2>
+          <p>
+            I am a freelance video editor with 6+ years of experience crafting
+            narrative-driven edits, corporate promos, and social-first short
+            form content. My strengths are pacing, color grading, and
+            storytelling through sound design. I enjoy collaborating with
+            directors and brands to turn raw footage into memorable stories.
+          </p>
+        </div>
+      </section>
+
+      <h2 id="projects">Selected projects</h2>
+      <div class="grid">
+        <!-- Repeat these cards and replace sources -->
+        <article class="card">
+          <video width="320" height="240" controls>
+            <source src="/assets/videos/project1.MOV" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Brand Promo — Sunrise Coffee</h3>
+          <p>
+            A 45s social-first promo focusing on cinematic slow-motion shots,
+            product detail and punchy cuts for Instagram and TikTok campaigns.
+          </p>
+          <div class="meta">
+            <small class="tag">Commercial</small>
+          </div>
+        </article>
+
+        <article class="card">
+          <video width="320" height="240" controls>
+            <source src="/assets/videos/project1.MOV" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Documentary Short — The Last Boat</h3>
+          <p>
+            Color graded short documentary focusing on atmosphere and
+            interview-driven storytelling. Delivered for festival submission.
+          </p>
+          <div class="meta">
+            <small class="tag">Documentary</small>
+          </div>
+        </article>
+
+        <article class="card">
+          <video width="320" height="240" controls>
+            <source src="/assets/videos/project1.MOV" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Documentary Short — The Last Boat</h3>
+          <p>
+            Color graded short documentary focusing on atmosphere and
+            interview-driven storytelling. Delivered for festival submission.
+          </p>
+          <div class="meta">
+            <small class="tag">Documentary</small>
+          </div>
+        </article>
+
+        <article class="card">
+          <video width="320" height="240" controls>
+            <source src="/assets/videos/project1.MOV" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <h3>Event Highlight — City Run 2024</h3>
+          <p>
+            Fast-paced event highlight reel optimized for YouTube and socials.
+            Focus on rhythm, match-cuts and sound design.
+          </p>
+          <div class="meta">
+            <small class="tag">Event</small>
+          </div>
+        </article>
+      </div>
+
+      <div class="split">
+        <section class="skills">
+          <h2>Skills & Tools</h2>
+          <div class="skill-list" style="margin-top: 10px">
+            <div class="skill">Adobe Premiere Pro</div>
+            <div class="skill">DaVinci Resolve</div>
+            <div class="skill">After Effects</div>
+            <div class="skill">Color Grading</div>
+            <div class="skill">Sound Design</div>
+            <div class="skill">Motion Graphics</div>
+            <div class="skill">Multicam</div>
+            <div class="skill">Compression & Delivery</div>
+          </div>
+        </section>
+
+        <aside class="testimonials">
+          <h2>Testimonials</h2>
+          <blockquote>
+            "John transformed our footage into a clear, emotional story. Fast
+            turnaround and great communication." — Sarah P., Director
+          </blockquote>
+          <blockquote>
+            "Great eye for pacing and detail. Delivered more than we asked for."
+            — Omar N., Producer
+          </blockquote>
+
+          <h3 style="margin-top: 12px">Contact</h3>
+          <p style="color: var(--muted)">
+            Email me at
+            <a href="mailto:john@example.com">john@example.com</a> or use the
+            contact form.
+          </p>
+        </aside>
+      </div>
+
+      <h2 id="contact" style="margin-top: 18px">Contact</h2>
+      <form onsubmit="event.preventDefault();sendMessage();">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <input type="text" id="subject" placeholder="Subject" />
+        <textarea
+          id="message"
+          placeholder="Tell me about your project"
+          required
+        ></textarea>
+        <div style="display: flex; gap: 8px; align-items: center">
+          <button class="btn" type="submit">Send message</button>
+          <div style="color: var(--muted); font-size: 13px">
+            Or email <a href="mailto:john@example.com">john@example.com</a>
+          </div>
+        </div>
+      </form>
+
+      <footer>
+        <small
+          >© John Doe — Video Editor • Built with HTML &amp; CSS • Replace demo
+          assets with your videos and images.</small
+        >
+      </footer>
+    </main>
+  </body>
+</html>
