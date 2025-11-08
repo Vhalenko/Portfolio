@@ -19,14 +19,10 @@
           </div>
           <div class="contact" aria-label="Contact info">
             <div>
-              <strong>Phone:</strong>&nbsp;<a href="tel:+31612345678"
-                >+31 6 12 34 56 78</a
-              >
+              <strong>Phone:</strong>&nbsp;+31 6 12 34 56 78
             </div>
             <div>
-              <strong>Email:</strong>&nbsp;<a href="mailto:john@example.com"
-                >john@example.com</a
-              >
+              <strong>Email:</strong>&nbsp;john@example.com
             </div>
             <div><strong>Birthday:</strong>&nbsp;June 15, 1995</div>
             <div><strong>Location:</strong>&nbsp;Amsterdam, Netherlands</div>
@@ -149,12 +145,14 @@
       </div>
 
       <h2 id="contact" style="margin-top: 18px">Contact</h2>
-      <form onsubmit="event.preventDefault();sendMessage();">
-        <input type="text" id="name" placeholder="Your name" required />
-        <input type="email" id="email" placeholder="Your email" required />
-        <input type="text" id="subject" placeholder="Subject" />
+      <form action="https://api.web3forms.com/submit" method="POST">
+         <input type="hidden" name="access_key" value="8c6e13fe-b32a-491b-b4d2-19f4531fd7b0">
+        <input type="text" name="name" id="name" placeholder="Your name" required />
+        <input type="email" name="email" id="email" placeholder="Your email" required />
+        <input type="text" name="subject" id="subject" placeholder="Subject" />
         <textarea
           id="message"
+          name="message"
           placeholder="Tell me about your project"
           required
         ></textarea>
