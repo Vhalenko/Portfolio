@@ -32,10 +32,10 @@ body {
 .about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centers content horizontally */
-  align-items: center;      /* centers content vertically */
-  gap: 40px;                /* space between the two sides */
-  text-align: center;       /* centers text inside elements */
+  justify-content: center; 
+  align-items: center;     
+  gap: 40px;               
+  text-align: center;     
   padding: 40px 20px;
 }
 
@@ -64,6 +64,7 @@ body {
   width: 240px;
   height: 240px;
   border-radius: 50%;
+  border: var(--accent) solid 5px;
   overflow: hidden;
   margin-bottom: 15px;
 }
